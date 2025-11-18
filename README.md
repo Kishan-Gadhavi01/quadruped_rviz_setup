@@ -1,10 +1,12 @@
 # 🤖 Twin Quadruped Robot — ROS 2 Humble  
-![ROS2](https://img.shields.io/badge/ROS-2%20Humble-blue?logo=ros)  
-![URDF](https://img.shields.io/badge/URDF-Robot%20Modeling-orange)  
-![Python](https://img.shields.io/badge/Python-ROS2%20Nodes-yellow?logo=python)  
-![Fusion360](https://img.shields.io/badge/Fusion%20360-CAD%20Design-red?logo=autodesk)  
 
+<p align="left">
+  <img src="https://img.shields.io/badge/ROS-2%20Humble-blue?logo=ros" />
+  <img src="https://img.shields.io/badge/URDF-Robot%20Modeling-orange" />
+  <img src="https://img.shields.io/badge/Python-ROS2%20Nodes-yellow?logo=python" />
+    <img src="https://img.shields.io/badge/Fusion%20360-CAD%20Design-red?logo=autodesk" />
 
+</p>
 
 ## 🚀 Project Overview  
 This repository demonstrates:
@@ -28,14 +30,47 @@ This is a compact but complete robotics showcase.
 ---
 
 ## 📂 Repository Structure
-twin_description/  
- ├── config/              # ros2_control YAML  
- ├── launch/              # RViz2 launch files  
- ├── meshes/              # STL files (Fusion 360 models)  
- ├── rviz/                # RViz2 config  
- ├── scripts/             # GUI + command scripts  
- └── urdf/                # main URDF description  
 
+```text
+twin_description
+└── src
+    ├── CMakeLists.txt                      # Build configuration for ROS 2 package
+    │
+    ├── config
+    │   └── quad_controller.yaml            # ros2_control joint controller settings
+    │
+    ├── launch
+    │   ├── display.launch.py               # Launch URDF + RViz2 + joint_state_publisher
+    │   ├── __pycache__                     # Python cache
+    │   └── start.py                        # Additional launch file
+    │
+    ├── meshes
+    │   ├── base_link.stl                   # Base mesh
+    │   ├── left_back_link1.stl             # LB link 1
+    │   ├── left_back_link2.stl             # LB link 2
+    │   ├── left_back_link3.stl             # LB link 3
+    │   ├── left_front_link1.stl            # LF link 1
+    │   ├── left_front_link2.stl            # LF link 2
+    │   ├── left_front_link3.stl            # LF link 3
+    │   ├── right_back_link1.stl            # RB link 1
+    │   ├── right_back_link2.stl            # RB link 2
+    │   ├── right_back_link3.stl            # RB link 3
+    │   ├── right_front_link1.stl           # RF link 1
+    │   ├── right_front_link2.stl           # RF link 2
+    │   └── right_front_link3.stl           # RF link 3
+    │
+    ├── package.xml                         # Package metadata + dependencies
+    │
+    ├── rviz
+    │   └── robot_display.rviz              # RViz2 configuration
+    │
+    ├── scripts
+    │   ├── command.py                      # Sends predefined joint command
+    │   └── joint_gui.py                    # Tkinter GUI for joint control
+    │
+    └── urdf
+        └── main.urdf                       # Main robot description (links, joints, meshes)
+```
 ---
 
 ## 🛠️ Requirements  
