@@ -159,20 +159,7 @@ The GUI includes:
 
 ---
 
-## 🎯 Purpose of This Project  
-This project demonstrates my ability to:
 
-- Design robot hardware from scratch  
-- Build STL components in Fusion 360  
-- Convert CAD models into a complete URDF  
-- Structure a clean ROS 2 package  
-- Configure ros2_control for multi-joint robots  
-- Write functional Python control nodes  
-- Understand quadruped kinematics & joint behavior  
-
-It's a compact portfolio project showing practical robotics engineering skills.
-
----
 
 ## ⭐ Future Additions  
 - Basic gait generator  
