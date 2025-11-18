@@ -1,0 +1,16 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+    Displays:
+      - Name: RobotModel
+        Class: rviz/RobotModel
+        Enabled: true
+        Robot Description: robot_description
+        Visual Enabled: true
+        Collision Enabled: false
+      - Name: TF
+        Class: rviz/TF
+        Enabled: true
+        Marker Scale: 0.1
+Fixed Frame: base_link
+

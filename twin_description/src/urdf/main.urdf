@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="main" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.11426981342284664 -0.1629151660898908 0.017698543561092718" rpy="0 0 0"/>
+      <mass value="3.8064165761706428"/>
+      <inertia ixx="0.0873486941612613" iyy="0.039096519599077555" izz="0.1221896454050797"
+              ixy="-9.168494176731157e-06" iyz="6.541378154647365e-05" ixz="-2.0678436207497743e-05"/>
+    </inertial>
+    <visual name="base_link_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+       <material name="gray">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision name="base_link_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="left_front_link1">
+    <inertial>
+      <origin xyz="-0.00028825783081199205 -5.439006617091735e-06 0.0309696157226796" rpy="0 0 0"/>
+      <mass value="0.3420630991266374"/>
+      <inertia ixx="7.913475811715842e-05" iyy="7.284059339934964e-05" izz="9.263964654885721e-05"
+              ixy="-4.0377923560456215e-08" iyz="6.832828719765139e-09" ixz="1.9708000204590524e-07"/>
+    </inertial>
+    <visual name="left_front_link1_visual">
+      <origin xyz="-1.9027793091500044e-09 0.010199551579065188 -0.0019933556897031163" rpy="-1.5707963267948966 0 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/left_front_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+	<material name="peach">
+	  <color rgba="1.0 0.694 0.584 1.0"/>
+	</material>
+    </visual>
+    <collision name="left_front_link1_collision">
+      <origin xyz="-1.9027793091500044e-09 0.010199551579065188 -0.0019933556897031163" rpy="-1.5707963267948966 0 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/left_front_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="left_front_link2">
+    <inertial>
+      <origin xyz="-0.11304108146678625 -0.0005733809085207975 -0.00741344993750785" rpy="0 0 0"/>
+      <mass value="0.4343410667279861"/>
+      <inertia ixx="9.147533006588406e-05" iyy="0.0011126215170932253" izz="0.0010760512386109658"
+              ixy="-3.7188539183498695e-06" iyz="-8.899991997856943e-07" ixz="-0.00012548302741809407"/>
+    </inertial>
+    <visual name="left_front_link2_visual">
+      <origin xyz="0.02226517157906513 0.036637075689703084 -0.04499999809722069" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/left_front_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="teal_blue">
+  <color rgba="0.231 0.478 0.553 1.0"/>
+</material>
+
+
+    </visual>
+    <collision name="left_front_link2_collision">
+      <origin xyz="0.02226517157906513 0.036637075689703084 -0.04499999809722069" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/left_front_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="left_front_link3">
+    <inertial>
+      <origin xyz="-0.056788926831077585 -0.004160698669059117 0.0022165507360212768" rpy="0 0 0"/>
+      <mass value="0.1052407093207252"/>
+      <inertia ixx="3.593634720122467e-06" iyy="0.0002416876444596358" izz="0.00024460332799552086"
+              ixy="-5.703062498786226e-07" iyz="1.4130807615421155e-08" ixz="-2.3427791593321184e-07"/>
+    </inertial>
+    <visual name="left_front_link3_visual">
+      <origin xyz="0.30522005086539333 0.016261748626928797 -0.04299999814147119" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/left_front_link3.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="lavender_pink">
+  <color rgba="0.765 0.592 0.710 1.0"/>
+</material>
+
+    </visual>
+    <collision name="left_front_link3_collision">
+      <origin xyz="0.30522005086539333 0.016261748626928797 -0.04299999814147119" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/left_front_link3.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="right_front_link1">
+    <inertial>
+      <origin xyz="0.0002882590947600505 -4.940121546335164e-06 0.030969233313791877" rpy="0 0 0"/>
+      <mass value="0.3420630991266386"/>
+      <inertia ixx="7.913002633943178e-05" iyy="7.283974315729774e-05" izz="9.263576501318885e-05"
+              ixy="3.6718133656732203e-08" iyz="4.7789318798481225e-09" ixz="-1.9423993289973893e-07"/>
+    </inertial>
+    <visual name="right_front_link1_visual">
+      <origin xyz="-0.2299999969217735 0.010199557681614289 -0.10699335568970311" rpy="-1.5707963267948966 0 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/right_front_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="peach">
+	  <color rgba="1.0 0.694 0.584 1.0"/>
+	</material>
+
+    </visual>
+    <collision name="right_front_link1_collision">
+      <origin xyz="-0.2299999969217735 0.010199557681614289 -0.10699335568970311" rpy="-1.5707963267948966 0 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/right_front_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="right_front_link2">
+    <inertial>
+      <origin xyz="-0.11304107690503151 -0.0005733864305127501 -0.005413448673558427" rpy="0 0 0"/>
+      <mass value="0.4343410667279858"/>
+      <inertia ixx="9.147533006558656e-05" iyy="0.0011126215170925505" izz="0.001076051238610612"
+              ixy="-3.7188539183537726e-06" iyz="-8.899991997581014e-07" ixz="-0.00012548302741816758"/>
+    </inertial>
+    <visual name="right_front_link2_visual">
+      <origin xyz="0.022265176140820735 -0.06420553013551947 -0.2679999969217741" rpy="-3.141592653589793 -1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/right_front_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="teal_blue">
+  <color rgba="0.231 0.478 0.553 1.0"/>
+</material>
+
+    </visual>
+    <collision name="right_front_link2_collision">
+      <origin xyz="0.022265176140820735 -0.06420553013551947 -0.2679999969217741" rpy="-3.141592653589793 -1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/right_front_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="right_front_link3">
+    <inertial>
+      <origin xyz="-0.059385269440564985 0.0022328246051799817 0.004447489276238983" rpy="0 0 0"/>
+      <mass value="0.10083724800010999"/>
+      <inertia ixx="3.5233237804599762e-06" iyy="0.00022662387835426998" izz="0.0002295032961788842"
+              ixy="-6.048755532658064e-06" iyz="4.9214399407636854e-08" ixz="-4.4963610849445973e-07"/>
+    </inertial>
+    <visual name="right_front_link3_visual">
+      <origin xyz="0.10815838777104508 -0.09549840150333472 -0.231200140512925" rpy="2.866783374922268 -1.4493455968002438 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/right_front_link3.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="lavender_pink">
+  <color rgba="0.765 0.592 0.710 1.0"/>
+</material>
+
+    </visual>
+    <collision name="right_front_link3_collision">
+      <origin xyz="0.10815838777104508 -0.09549840150333472 -0.231200140512925" rpy="2.866783374922268 -1.4493455968002438 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/right_front_link3.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="right_back_link1">
+    <inertial>
+      <origin xyz="0.000288259094760015 -4.940121546308518e-06 0.030969233313791804" rpy="0 0 0"/>
+      <mass value="0.34206309912663874"/>
+      <inertia ixx="7.913002633944122e-05" iyy="7.28397431572908e-05" izz="9.263576501319579e-05"
+              ixy="3.6718133657707985e-08" iyz="4.7789318806477216e-09" ixz="-1.9423993289843788e-07"/>
+    </inertial>
+    <visual name="right_back_link1_visual">
+      <origin xyz="-0.2299999969217735 0.010199557681614289 -0.4019933556897031" rpy="-1.5707963267948966 0 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/right_back_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="peach">
+	  <color rgba="1.0 0.694 0.584 1.0"/>
+	</material>
+
+    </visual>
+    <collision name="right_back_link1_collision">
+      <origin xyz="-0.2299999969217735 0.010199557681614289 -0.4019933556897031" rpy="-1.5707963267948966 0 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/right_back_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="right_back_link2">
+    <inertial>
+      <origin xyz="-0.11304107690503147 -0.0005733864305116754 -0.005413448673558854" rpy="0 0 0"/>
+      <mass value="0.43434106672798517"/>
+      <inertia ixx="9.147533006548247e-05" iyy="0.0011126215170927031" izz="0.0010760512386105564"
+              ixy="-3.718853918411452e-06" iyz="-8.899991996436096e-07" ixz="-0.0001254830274181485"/>
+    </inertial>
+    <visual name="right_back_link2_visual">
+      <origin xyz="0.02226517614082078 -0.464205530135519 -0.2679999969217741" rpy="-3.141592653589793 -1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/right_back_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="teal_blue">
+  <color rgba="0.231 0.478 0.553 1.0"/>
+</material>
+
+    </visual>
+    <collision name="right_back_link2_collision">
+      <origin xyz="0.02226517614082078 -0.464205530135519 -0.2679999969217741" rpy="-3.141592653589793 -1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/right_back_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="right_back_link3">
+    <inertial>
+      <origin xyz="-0.059310838047992684 0.0037252382910391902 0.004398061415069173" rpy="0 0 0"/>
+      <mass value="0.10083748581582183"/>
+      <inertia ixx="3.3602723178947913e-06" iyy="0.00022678830509183234" izz="0.00022950472228201388"
+              ixy="-4.334610659104815e-07" iyz="6.048954795043193e-08" ixz="-4.485666920787945e-07"/>
+    </inertial>
+    <visual name="right_back_link3_visual">
+      <origin xyz="0.15484006855121543 -0.4344372978395717 -0.20838836453086998" rpy="-3.141592653589793 -1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/right_back_link3.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="lavender_pink">
+  <color rgba="0.765 0.592 0.710 1.0"/>
+</material>
+
+    </visual>
+    <collision name="right_back_link3_collision">
+      <origin xyz="0.15484006855121543 -0.4344372978395717 -0.20838836453086998" rpy="-3.141592653589793 -1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/right_back_link3.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="left_back_link1">
+    <inertial>
+      <origin xyz="-0.00028825783081201157 -5.439006617076192e-06 0.03096961572267979" rpy="0 0 0"/>
+      <mass value="0.34206309912663707"/>
+      <inertia ixx="7.913475811714005e-05" iyy="7.284059339933424e-05" izz="9.263964654885716e-05"
+              ixy="-4.037792356031254e-08" iyz="6.832828719927769e-09" ixz="1.9708000204589677e-07"/>
+    </inertial>
+    <visual name="left_back_link1_visual">
+      <origin xyz="-1.902779325144155e-09 0.010199551579065188 -0.4019933556897031" rpy="-1.5707963267948966 0 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/left_back_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="peach">
+	  <color rgba="1.0 0.694 0.584 1.0"/>
+	</material>
+
+    </visual>
+    <collision name="left_back_link1_collision">
+      <origin xyz="-1.902779325144155e-09 0.010199551579065188 -0.4019933556897031" rpy="-1.5707963267948966 0 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/left_back_link1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="left_back_link2">
+    <inertial>
+      <origin xyz="-0.11304108146678686 -0.000573380908521699 -0.005413449937507613" rpy="0 0 0"/>
+      <mass value="0.43434106672798495"/>
+      <inertia ixx="9.147533006570452e-05" iyy="0.0011126215170931594" izz="0.001076051238611167"
+              ixy="-3.7188539182830826e-06" iyz="-8.899991997940969e-07" ixz="-0.00012548302741810654"/>
+    </inertial>
+    <visual name="left_back_link2_visual">
+      <origin xyz="0.022265171579065247 0.4366370756897022 -0.019999998097220677" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/left_back_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="teal_blue">
+  <color rgba="0.231 0.478 0.553 1.0"/>
+</material>
+
+    </visual>
+    <collision name="left_back_link2_collision">
+      <origin xyz="0.022265171579065247 0.4366370756897022 -0.019999998097220677" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/left_back_link2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="left_back_link3">
+    <inertial>
+      <origin xyz="-0.056788926831077155 -0.0041606986690588595 0.004216550736021278" rpy="0 0 0"/>
+      <mass value="0.10524070932072536"/>
+      <inertia ixx="3.593634720130273e-06" iyy="0.00024168764445962887" izz="0.0002446033279956232"
+              ixy="-5.703062498797068e-07" iyz="1.413080761539405e-08" ixz="-2.3427791593342868e-07"/>
+    </inertial>
+    <visual name="left_back_link3_visual">
+      <origin xyz="0.3019548040028746 0.4253338778371151 -0.019999998141471173" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/left_back_link3.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="lavender_pink">
+  <color rgba="0.765 0.592 0.710 1.0"/>
+</material>
+
+    </visual>
+    <collision name="left_back_link3_collision">
+      <origin xyz="0.3019548040028746 0.4253338778371151 -0.019999998141471173" rpy="0 1.5707963267948966 0"/>
+      <geometry>
+        <mesh filename="package://twin_description/meshes/left_back_link3.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="left_front_link2_Revolute-4" type="revolute">
+    <origin xyz="-0.1546814 -0.00042794 0.0075" rpy="0 0 0"/>
+    <parent link="left_front_link2"/>
+    <child link="left_front_link3"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.141593" upper="-0.0" effort="2.0" velocity="3.5"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+
+  <joint name="left_front_link1_Revolute-5" type="revolute">
+    <origin xyz="-0.022 -0.01206562 0.03464372" rpy="-1.5707963267948966 0 1.5707963267948966"/>
+    <parent link="left_front_link1"/>
+    <child link="left_front_link2"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="0.0" upper="1.570796" effort="2.0" velocity="3.5"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+
+  <joint name="base_link_Revolute-6" type="revolute">
+    <origin xyz="0.00014372 -0.002 -0.01149062" rpy="1.5707963267948966 0 0"/>
+    <parent link="base_link"/>
+    <child link="left_front_link1"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.570796" upper="1.570796" effort="2.0" velocity="3.5"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+
+  <joint name="base_link_Revolute-7" type="revolute">
+    <origin xyz="0.22907263 0 -0.01147406" rpy="1.5707963267948966 0 0"/>
+    <parent link="base_link"/>
+    <child link="right_front_link1"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.570796" upper="1.570796" effort="2.0" velocity="3.5"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+
+  <joint name="right_front_link1_Revolute-8" type="revolute">
+    <origin xyz="0.02 -0.01097201 0.03379506" rpy="1.5707963267948966 0 1.5707963267948966"/>
+    <parent link="right_front_link1"/>
+    <child link="right_front_link2"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.570796" upper="0.0" effort="2.0" velocity="3.5"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+
+  <joint name="right_front_link2_Revolute-9" type="revolute">
+    <origin xyz="-0.1546814 -0.00042795 0.0075" rpy="0 0 0"/>
+    <parent link="right_front_link2"/>
+    <child link="right_front_link3"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="0.0" upper="3.141593" effort="2.0" velocity="3.5"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+
+  <joint name="base_link_Revolute-10" type="revolute">
+    <origin xyz="0.22907263 -0.34 -0.01147406" rpy="1.5707963267948966 0 0"/>
+    <parent link="base_link"/>
+    <child link="right_back_link1"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.570796" upper="1.570796" effort="2.0" velocity="3.5"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+
+  <joint name="right_back_link1_Revolute-11" type="revolute">
+    <origin xyz="0.02 -0.01097201 0.03379506" rpy="1.5707963267948966 0 1.5707963267948966"/>
+    <parent link="right_back_link1"/>
+    <child link="right_back_link2"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.141593" upper="0.0" effort="2.0" velocity="3.5"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+
+  <joint name="right_back_link2_Revolute-12" type="revolute">
+    <origin xyz="-0.1546814 -0.00042795 0.0075" rpy="0 0 0"/>
+    <parent link="right_back_link2"/>
+    <child link="right_back_link3"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="0.0" upper="3.141593" effort="2.0" velocity="3.5"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+
+  <joint name="base_link_Revolute-13" type="revolute">
+    <origin xyz="0.00014372 -0.34 -0.01149062" rpy="1.5707963267948966 0 0"/>
+    <parent link="base_link"/>
+    <child link="left_back_link1"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.570796" upper="1.570796" effort="2.0" velocity="3.5"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+
+  <joint name="left_back_link1_Revolute-14" type="revolute">
+    <origin xyz="-0.02 -0.01206562 0.03464372" rpy="-1.5707963267948966 0 1.5707963267948966"/>
+    <parent link="left_back_link1"/>
+    <child link="left_back_link2"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="0.0" upper="3.141593" effort="2.0" velocity="3.5"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>f
+
+  <joint name="left_back_link2_Revolute-15" type="revolute">
+    <origin xyz="-0.1546814 -0.00042794 0.0075" rpy="0 0 0"/>
+    <parent link="left_back_link2"/>
+    <child link="left_back_link3"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.141593" upper="0.0" effort="2.0" velocity="3.5"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+  
+    <!-- ros2_control + gz_ros2_control plugin -->
+  <ros2_control name="GazeboSimSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+
+    <!-- List each actuated joint and declare command + state interfaces -->
+    <joint name="left_front_link2_Revolute-4">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="left_front_link1_Revolute-5">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="base_link_Revolute-6">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="base_link_Revolute-7">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="right_front_link1_Revolute-8">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="right_front_link2_Revolute-9">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="base_link_Revolute-10">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="right_back_link1_Revolute-11">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="right_back_link2_Revolute-12">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="base_link_Revolute-13">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="left_back_link1_Revolute-14">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+    <joint name="left_back_link2_Revolute-15">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+      <state_interface name="effort"/>
+    </joint>
+
+  </ros2_control>
+
+  <!-- gz_ros2_control plugin: points to the controller YAML in the package config folder -->
+<gazebo>
+    <plugin filename="libgz_ros2_control-system.so" name="gz_ros2_control::GazeboSimSystem">
+      <parameters>$(find twin_description)/config/quad_controller.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+	
+</robot>

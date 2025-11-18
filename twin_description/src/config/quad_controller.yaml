@@ -1,0 +1,31 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 1000
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+joint_trajectory_controller:
+  ros__parameters:
+    type: joint_trajectory_controller/JointTrajectoryController
+    joints:
+      - left_front_link2_Revolute-4
+      - left_front_link1_Revolute-5
+      - base_link_Revolute-6
+      - base_link_Revolute-7
+      - right_front_link1_Revolute-8
+      - right_front_link2_Revolute-9
+      - base_link_Revolute-10
+      - right_back_link1_Revolute-11
+      - right_back_link2_Revolute-12
+      - base_link_Revolute-13
+      - left_back_link1_Revolute-14
+      - left_back_link2_Revolute-15
+    state_publish_rate: 50
+    # Use position commands
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
