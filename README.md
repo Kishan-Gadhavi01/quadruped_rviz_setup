@@ -85,20 +85,29 @@ Main dependencies:
 - python3-tk (for the GUI)
 
 Install:
+```bash
+
 sudo apt update  
 sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-robot-state-publisher ros-humble-joint-state-publisher-gui ros-humble-rviz2 python3-tk  
+```
 
 ---
 
 ## 🔧 Build Instructions  
+```bash
+
 source /opt/ros/humble/setup.bash  
 colcon build --packages-select twin_description  
 source install/setup.bash  
+```
 
 ---
 
 ## 👀 Visualize the Robot in RViz2  
+```bash
+
 ros2 launch twin_description display.launch.py  
+```
 
 This launches:
 - robot_state_publisher  
@@ -111,8 +120,9 @@ You can move all joints via the slider GUI.
 
 ## 🎮 Control the Robot  
 ### Predefined Joint Command  
-ros2 run twin_description command.py  
-
+```bash
+ros2 run twin_description command.py
+```
 ### Custom Joint GUI  
 ros2 run twin_description joint_gui.py  
 
