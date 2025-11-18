@@ -4,10 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-ROS2%20Nodes-yellow?logo=python)  
 ![Fusion360](https://img.shields.io/badge/Fusion%20360-CAD%20Design-red?logo=autodesk)  
 
-A custom-built quadruped robot designed entirely in **Fusion 360**, exported into **STL**, assembled into a complete **URDF**, and controlled using **ROS 2 Humble**.  
-This repo showcases my robotics engineering workflow: modeling, visualization, and joint control.
 
----
 
 ## 🚀 Project Overview  
 This repository demonstrates:
